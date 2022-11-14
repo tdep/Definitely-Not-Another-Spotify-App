@@ -8,15 +8,26 @@
     <script defer src="./main.js"></script>
 </head>
 <body>
-    <div class="search-div">
-        <form class="search-form" id="search-form">
-            <label name="search">Enter Artist Name:</label>
-            <input type="text" name="search" id="search-bar" placeholder="enter text...">
-            <label name="submit"></label>
-            <input type="submit" id="submit-button">
-        </form>
+    <div class="column"> 
+        <div class="playlists" id="saved-lists">
+            <h1>Saved Playlists</h1>
+            <ol id="tracks">
+                
+            </ol>
+        </div>
     </div>
-    <div class="search-result" id="search-result">
+    <div class="column">
+        <div class="search-div">
+            <form class="search-form" id="search-form">
+                <label name="search">Enter Artist Name:</label>
+                <input type="text" name="search" id="search-bar" placeholder="enter text...">
+                <label name="submit"></label>
+                <input type="submit" id="submit-button">
+            </form>
+        </div>
     </div>
+        <div class="search-result" id="search-result">
+    </div>
+
 </body>
 </html>
