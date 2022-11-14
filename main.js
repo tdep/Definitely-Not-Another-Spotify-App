@@ -19,24 +19,25 @@ const tracks = document.getElementById("tracks")
 // let listDiv = document.createElement("div")
 // listDiv.classname = "playlist-name"
 // listDiv.innerText = "My Awesome Playlist"
-let listButton = document.createElement("button")
-listButton.innerText = "My Awesome Playlist"
-listButton.setAttribute("style", "border: 1px solid black; margin:20px auto 20px auto;")
-savedLists.append(listButton)
-listButton.addEventListener("click", () => {
+// let listButton = document.createElement("button")
+// listButton.innerText = "My Awesome Playlist"
+// listButton.id = "list-button"
+// listButton.setAttribute("style", "border: 1px solid black; margin:20px auto 20px auto;")
+// savedLists.append(listButton)
+// listButton.addEventListener("click", () => {
 	//saved-lists dom populator
-	 async () => {
-		let req = await fetch("http://localhost:3000/playlists")
-		let res = await req.json()
-		res.forEach((element) => {
-			let li = document.createElement("li")
-			li.innerText = element.title
-			console.log(li)
-			tracks.append(li)
-		})
-	}
+	//  async () => {
+	// 	let req = await fetch("http://localhost:3000/playlists")
+	// 	let res = await req.json()
+	// 	res.forEach((element) => {
+	// 		let li = document.createElement("li")
+	// 		li.innerText = element.title
+	// 		console.log(li)
+	// 		tracks.append(li)
+	// 	})
+	// }
 
-})
+// })
 
 
 //Search function

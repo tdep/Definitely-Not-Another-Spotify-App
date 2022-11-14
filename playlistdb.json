@@ -31,6 +31,14 @@
       "artist": "Burna Boy",
       "duration": "221 seconds",
       "id": 4
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/0067a85ccb3c9477afc1c883f3dcfc4a/56x56-000000-80-0-0.jpg",
+      "title": "Money (That's What I Want) (Single Version / Mono)",
+      "album": "20th Century Masters: The Millennium Collection: Best Of Barrett Strong",
+      "artist": "Barrett Strong",
+      "duration": "157 seconds",
+      "id": 5
     }
   ]
 }

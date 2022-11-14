@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Definitely Not Another Spotify App</title>
     <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="column"> 
-        <div class="playlists" id="saved-lists">
-            <h1>Saved Playlists</h1>
-            <ol id="tracks">
-                
-            </ol>
+    <div class="row">
+        <div class="column left"> 
+            <div class="playlists" id="saved-lists">
+                <li id="item1">Item 1</li>
+                <li id="item2">Item 2</li>
+                <li id="item3">Item 3</li>
+                <li id="item4">Item 4</li>
+            </div>
         </div>
-    </div>
-    <div class="column">
-        <div class="search-div">
-            <form class="search-form" id="search-form">
-                <label name="search">Enter Artist Name:</label>
-                <input type="text" name="search" id="search-bar" placeholder="enter text...">
-                <label name="submit"></label>
-                <input type="submit" id="submit-button">
-            </form>
+        <div class="column">
+            <div class="search-div">
+                <form class="search-form right" id="search-form">
+                    <label name="search">Enter Artist Name:</label>
+                    <input type="text" name="search" id="search-bar" placeholder="enter text...">
+                    <label name="submit"></label>
+                    <input type="submit" id="submit-button">
+                </form>
+            </div>
         </div>
-    </div>
-        <div class="search-result" id="search-result">
+            <div class="search-result" id="search-result">
+        </div>
     </div>
 
 </body>

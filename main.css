@@ -1,11 +1,17 @@
 .column {
     float: left;
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .playlists:after {
+}
+
+.left {
+    width: 32%;
+}
+
+.right {
+    width: 68%;
+}
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
