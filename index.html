@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
+    <header class="header">
+        <h1 class="header-title">♫ Not-ify ♫</h1>
+        <h4 class="header-subtitle">(naa-tuh-fei)</h4>
+    </header>
+    <div class="search-div">
+        <form class="search-form" id="search-form">
+            <label name="search">Enter Artist, Album, or Song</label>
+            <input type="text" name="search" id="search-bar" placeholder="enter text...">
+            <label name="submit"></label>
+            <input type="submit" id="submit-button">
+        </form>
+    </div>
     <div class="row">
         <div class="column left"> 
             <div class="playlists" id="saved-lists">
-                <li id="item1">Item 1</li>
-                <li id="item2">Item 2</li>
-                <li id="item3">Item 3</li>
-                <li id="item4">Item 4</li>
+                <h1 class = "temp">Your Playlist</h1>
             </div>
         </div>
-        <div class="column">
-            <div class="search-div">
-                <form class="search-form right" id="search-form">
-                    <label name="search">Enter Artist Name:</label>
-                    <input type="text" name="search" id="search-bar" placeholder="enter text...">
-                    <label name="submit"></label>
-                    <input type="submit" id="submit-button">
-                </form>
-            </div>
-        </div>
+        <div class="column right">
             <div class="search-result" id="search-result">
+            </div>
         </div>
     </div>
 
