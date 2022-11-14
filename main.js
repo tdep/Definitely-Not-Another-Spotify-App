@@ -5,15 +5,14 @@ const submitButton = document.getElementById("submit-button")
 const searchForm = document.getElementById("search-form")
 //result list variables
 const resultDiv = document.getElementById("search-result")
-const trackCardContents = {
-	trackCardImg:"",
-	trackTitle:"",
-	trackAlbum:"",
-	trackArtist:"",
-	trackDuration:""
+//POST Request template
+const playlistContents = {
+	img:"",
+	title:"",
+	album:"",
+	artist:"",
+	duration:""
 }
-
-
 
 
 //Search function
@@ -42,9 +41,8 @@ const runSearch = () => {
 			})
 			let res = await req.json()
 			let entryItem = res.data
+			
 			//render each element from res.data to the DOM
-			//delete elements on page
-			//populate the DOM
 			entryItem.forEach((entry) => {
 				let trackCard = document.createElement("div")
 				trackCard.id = entry.id
@@ -63,13 +61,37 @@ const runSearch = () => {
 				let trackDuration = document.createElement("p")
 				trackDuration.innerText = `${entry.duration} seconds`
 				trackCard.setAttribute("style", "border: 1px solid black; margin:20px auto 10px auto;")
-				
+				let addButton = document.createElement("button")
+				addButton.className = "add-button"
+				addButton.innerHTML = "<b>+</b>"
 
-				trackCard.append(trackCardImg, trackTitle, trackAlbum, trackArtist, trackDuration)
+				
+				//POST request
+				addButton.addEventListener("click",() => {
+					playlistContents.img = trackCardImg.src
+					playlistContents.title = trackTitle.innerText
+					playlistContents.album = trackAlbum.innerText
+					playlistContents.artist = trackArtist.innerText
+					playlistContents.duration = trackDuration.innerText
+					let dropdown = document.createElement("div")
+					dropdown.className = "dropdown"
+					const playLister = async () => {
+						const req = await fetch("http://localhost:3000/playlists", {
+							method: "POST",
+							headers: {
+								"Content-Type":"application/json"
+							},
+							body: JSON.stringify(playlistContents)
+						})
+					}
+					playLister()
+				})
+				
+				trackCard.append(trackCardImg, trackTitle, trackAlbum, trackArtist, trackDuration, addButton)
 				resultDiv.append(trackCard)
 				iterator += 1
 			})
-			console.log(iterator)
+			// console.log(iterator)
 		}
 		request()
 	})
