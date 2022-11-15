@@ -1,13 +1,186 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Definitely Not Another Spotify App</title>
-    <script defer src="./main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        /* Left column (menu) */
+        .left {
+            flex: 35%;
+            padding: 15px 0;
+        }
+
+        .left h2 {
+            padding-left: 8px;
+        }
+
+        .right {
+            flex: 65%;
+            padding: 15px;
+        }
+
+        #mySearch {
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid #ddd;
+        }
+
+        #myMenu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #myMenu li a {
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            display: block
+        }
+
+        #myMenu li a:hover {
+            background-color: #eee;
+        }
+
+         img {
+            vertical-align: middle;
+        }
+    </style>
 </head>
+
 <body>
-    
+   
+    </body>
+
+ 
+
+<div class="row">
+    <div class="left" style="background-color:#bbb;">
+        <p>Search Albums, Artist, Songs and more</p>
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        <ul id="myMenu">
+            <li><a href="#">My playlist</a></li>
+            <li><a href="#">happy playlis</a></li>
+            <li><a href="#">sad playlist</a></li>
+            <li><a href="#">gym Playlist</a></li>
+            <li><a href="#">cool Playlist</a></li>
+            <li><a href="#">dumb playlist</a></li>
+            <li><a href="#">awsome playlist</a></li>
+            <li><a href="#">hi playlist</a></li>
+            <li><a href="#">hi playlist</a></li>
+        </ul>
+    </div>
+
+        <div class="right" style="background-color:#ddd;">
+            <h2>Page Content</h2>
+            <p>Songs n stuff</p>
+            <table>
+                <tr>
+                    <th>title</th>
+                    <th>Artist</th>
+                    <th>Album</th>
+                </tr>
+                <tr>
+                    <td> <img src= "https://images.8tracks.com/cover/i/002/439/178/tumblr_mg1154N7a71qmf2zwo1_r1_1280-3965.png?rect=337,0,557,557&q=98&fm=jpg&fit=max" width="40" alt="">
+                    
+                    <span>
+                        
+                       
+                    </span>  geyser</td>
+                    <td>  Mitski</td>
+                    <td>  Be The Cowboy</td>
+                    <hr>
+                </tr>
+                
+                <tr>
+                    <td> <img src="https://images.8tracks.com/cover/i/002/439/178/tumblr_mg1154N7a71qmf2zwo1_r1_1280-3965.png?rect=337,0,557,557&q=98&fm=jpg&fit=max"
+                        width="40" alt="">creep</td>
+                    <td>radiohead</td>
+                    <td>pablo honey</td>
+                </tr>
+                
+                <tr>
+                    <td> <img src="https://images.8tracks.com/cover/i/002/439/178/tumblr_mg1154N7a71qmf2zwo1_r1_1280-3965.png?rect=337,0,557,557&q=98&fm=jpg&fit=max"
+                        width="40" alt="">late night talking</td>
+                    <td>Harry Styles</td>
+                    <td>harrys house</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://images.8tracks.com/cover/i/002/439/178/tumblr_mg1154N7a71qmf2zwo1_r1_1280-3965.png?rect=337,0,557,557&q=98&fm=jpg&fit=max"
+                        width="40" alt="">as it was</td>
+                    <td>Harry styles</td>
+                    <td>Harrys house</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://images.8tracks.com/cover/i/002/439/178/tumblr_mg1154N7a71qmf2zwo1_r1_1280-3965.png?rect=337,0,557,557&q=98&fm=jpg&fit=max"
+                        width="40" alt="">song</td>
+                    <td>artist</td>
+                    <td>album</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://images.8tracks.com/cover/i/002/439/178/tumblr_mg1154N7a71qmf2zwo1_r1_1280-3965.png?rect=337,0,557,557&q=98&fm=jpg&fit=max"
+                        width="40" alt="">song</td>
+                    <td>artist</td>
+                    <td>album</td>
+                    
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
 </body>
+
 </html>
