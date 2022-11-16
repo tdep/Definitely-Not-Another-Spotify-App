@@ -1,28 +1,36 @@
 {
   "playlists": [
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/bade219a19f51f3ea01b159bc6b36498/56x56-000000-80-0-0.jpg",
-      "title": "Taxman (2022 Mix)",
-      "album": "Revolver (Super Deluxe)",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/6e1e24a3e4311371abd2c888b1f0e13e/56x56-000000-80-0-0.jpg",
+      "title": "Taxman (Remastered 2009)",
+      "album": "Revolver (Remastered)",
       "artist": "The Beatles",
       "duration": "158 seconds",
       "id": 1
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/de48d988a82fc401f4b9bafc2639f7d0/56x56-000000-80-0-0.jpg",
-      "title": "Highway to Hell",
-      "album": "Highway to Hell",
-      "artist": "AC/DC",
-      "duration": "208 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/3a31bfbc6678856d2cfe10dbb22b8a24/56x56-000000-80-0-0.jpg",
+      "title": "Yellow",
+      "album": "Parachutes",
+      "artist": "Coldplay",
+      "duration": "266 seconds",
       "id": 2
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/2047754dc07232def42ec26a9a854544/56x56-000000-80-0-0.jpg",
-      "title": "Stairway to Heaven (Remaster)",
-      "album": "Led Zeppelin IV (Remaster)",
-      "artist": "Led Zeppelin",
-      "duration": "482 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/0019510a69161d7af10e25493dc6d544/56x56-000000-80-0-0.jpg",
+      "title": "POP/STARS",
+      "album": "POP/STARS",
+      "artist": "K/DA",
+      "duration": "191 seconds",
       "id": 3
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/6d416dc66a55cc8914425c365c1e7b74/56x56-000000-80-0-0.jpg",
+      "title": "Alone",
+      "album": "Black Panther: Wakanda Forever - Music From and Inspired By",
+      "artist": "Burna Boy",
+      "duration": "221 seconds",
+      "id": 4
     }
   ]
 }
