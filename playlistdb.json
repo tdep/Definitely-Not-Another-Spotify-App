@@ -1,0 +1,28 @@
+{
+  "playlists": [
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/bade219a19f51f3ea01b159bc6b36498/56x56-000000-80-0-0.jpg",
+      "title": "Taxman (2022 Mix)",
+      "album": "Revolver (Super Deluxe)",
+      "artist": "The Beatles",
+      "duration": "158 seconds",
+      "id": 1
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/de48d988a82fc401f4b9bafc2639f7d0/56x56-000000-80-0-0.jpg",
+      "title": "Highway to Hell",
+      "album": "Highway to Hell",
+      "artist": "AC/DC",
+      "duration": "208 seconds",
+      "id": 2
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/2047754dc07232def42ec26a9a854544/56x56-000000-80-0-0.jpg",
+      "title": "Stairway to Heaven (Remaster)",
+      "album": "Led Zeppelin IV (Remaster)",
+      "artist": "Led Zeppelin",
+      "duration": "482 seconds",
+      "id": 3
+    }
+  ]
+}
