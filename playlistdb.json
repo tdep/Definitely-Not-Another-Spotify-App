@@ -1,36 +1,60 @@
 {
   "playlists": [
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/6e1e24a3e4311371abd2c888b1f0e13e/56x56-000000-80-0-0.jpg",
-      "title": "Taxman (Remastered 2009)",
-      "album": "Revolver (Remastered)",
-      "artist": "The Beatles",
-      "duration": "158 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/1e6f6130ca0ccbdd0cde4dc2b05e6df9/56x56-000000-80-0-0.jpg",
+      "title": "Song 2",
+      "album": "Blur: The Best Of",
+      "artist": "Blur",
+      "duration": "121 seconds",
       "id": 1
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/3a31bfbc6678856d2cfe10dbb22b8a24/56x56-000000-80-0-0.jpg",
-      "title": "Yellow",
-      "album": "Parachutes",
-      "artist": "Coldplay",
-      "duration": "266 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/1e6f6130ca0ccbdd0cde4dc2b05e6df9/56x56-000000-80-0-0.jpg",
+      "title": "Song 2",
+      "album": "Blur: The Best Of",
+      "artist": "Blur",
+      "duration": "121 seconds",
       "id": 2
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/0019510a69161d7af10e25493dc6d544/56x56-000000-80-0-0.jpg",
-      "title": "POP/STARS",
-      "album": "POP/STARS",
-      "artist": "K/DA",
-      "duration": "191 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/63339855a8ce45b9676fbbe3d2268897/56x56-000000-80-0-0.jpg",
+      "title": "Play",
+      "album": "Play",
+      "artist": "K-391",
+      "duration": "167 seconds",
       "id": 3
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/6d416dc66a55cc8914425c365c1e7b74/56x56-000000-80-0-0.jpg",
-      "title": "Alone",
-      "album": "Black Panther: Wakanda Forever - Music From and Inspired By",
-      "artist": "Burna Boy",
-      "duration": "221 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/83ab273d6ab00e129398b14ca07baee6/56x56-000000-80-0-0.jpg",
+      "title": "TRUCK",
+      "album": "A ROCK",
+      "artist": "HARDY",
+      "duration": "218 seconds",
       "id": 4
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/d896e3c349479e4d9acf0b62975d6240/56x56-000000-80-0-0.jpg",
+      "title": "Name",
+      "album": "A Boy Named Goo",
+      "artist": "The Goo Goo Dolls",
+      "duration": "270 seconds",
+      "id": 5
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/51dfcb30fbab88f79d299e991081a75b/56x56-000000-80-0-0.jpg",
+      "title": "D O D O",
+      "album": "Fleur froide - Second état : la cristallisation",
+      "artist": "Tayc",
+      "duration": "179 seconds",
+      "id": 6
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/1e713a737c783e551ccb921afdc61a3e/56x56-000000-80-0-0.jpg",
+      "title": "go",
+      "album": "go",
+      "artist": "Cat Burns",
+      "duration": "215 seconds",
+      "id": 7
     }
   ]
 }
