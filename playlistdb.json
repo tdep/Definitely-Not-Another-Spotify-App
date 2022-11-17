@@ -23,6 +23,46 @@
       "artist": "Tame Impala",
       "duration": "211 seconds",
       "id": 3
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/24ae920cb3bde9bd3fd95cd4676b3b86/56x56-000000-80-0-0.jpg",
+      "title": "Yesterday and Today (2003 Remaster)",
+      "album": "Yes (Deluxe Edition)",
+      "artist": "Yes",
+      "duration": "169 seconds",
+      "id": 4
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/1bdcb776e4d04064cba66bdd494a94ef/56x56-000000-80-0-0.jpg",
+      "title": "Changes",
+      "album": "90125 (Deluxe Version)",
+      "artist": "Yes",
+      "duration": "380 seconds",
+      "id": 5
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/cec4b6bdf612c8ef276ac41adb354543/56x56-000000-80-0-0.jpg",
+      "title": "And You and I (2003 Remaster)",
+      "album": "Close to the Edge (Deluxe Edition)",
+      "artist": "Yes",
+      "duration": "607 seconds",
+      "id": 6
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/8ae92d9ed9b5569f1fdf706470c1a7ed/56x56-000000-80-0-0.jpg",
+      "title": "I've Seen All Good People: a. Your Move, b. All Good People (2003 Remaster)",
+      "album": "The Yes Album (Deluxe Edition)",
+      "artist": "Yes",
+      "duration": "413 seconds",
+      "id": 7
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/08f9ec96fb31ae8ae30c936e7c5a0a3c/56x56-000000-80-0-0.jpg",
+      "title": "LED",
+      "album": "Corrupted",
+      "artist": "OmenXIII",
+      "duration": "134 seconds",
+      "id": 8
     }
   ],
   "alternative": [
@@ -49,6 +89,22 @@
       "artist": "Radiohead",
       "duration": "387 seconds",
       "id": 3
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/47c526f1a14dbeabb40352e400153bba/56x56-000000-80-0-0.jpg",
+      "title": "Big Girl (You Are Beautiful)",
+      "album": "Life in Cartoon Motion",
+      "artist": "MIKA",
+      "duration": "248 seconds",
+      "id": 4
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/cdcdcef0ce79052749a31f2288a04a69/56x56-000000-80-0-0.jpg",
+      "title": "Trololo",
+      "album": "Happy Sad Songs, Vol. 2",
+      "artist": "The Gregory Brothers",
+      "duration": "102 seconds",
+      "id": 5
     }
   ],
   "jazz": [
@@ -125,6 +181,14 @@
       "artist": "Royal Philharmonic Orchestra",
       "duration": "78 seconds",
       "id": 4
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/9269686cc4dc25e86fae927509e2a177/56x56-000000-80-0-0.jpg",
+      "title": "Vivaldi: The Four Seasons, Violin Concerto in F Minor, Op. 8 No. 4, RV 297 \"Winter\": II. Largo",
+      "album": "Vivaldi: The Four Seasons",
+      "artist": "Renaud Capuçon",
+      "duration": "111 seconds",
+      "id": 5
     }
   ]
 }
