@@ -11,6 +11,10 @@ let iterator = 0
 //playlist-list variables
 const savedLists = document.getElementById("saved-lists")
 const tracks = document.getElementById("tracks")
+const alternativeButton = document.getElementById("alternative")
+const rockButton = document.getElementById("rock")
+const jazzButton = document.getElementById("jazz")
+const classicalButton = document.getElementById("classical")
 
 //Create new playlist
 let playlistNameValue = document.getElementById("playlist-name-bar")
@@ -25,6 +29,80 @@ createButton.addEventListener("click", () => {
 	playlistDiv.append(playlistName)
 	savedLists.append(playlistDiv)
 })
+
+//Playlist populating POST requests
+const classicalAdd = (domElement, track) => {
+	const button = document.createElement("button")
+	button.innerHTML = "<b>+</b> Classical"
+	button.addEventListener("click", () => {
+		const addToDb = async () => {
+			await fetch("http://localhost:3000/classical", {
+				method: "POST",
+				headers: {
+					"Content-Type":"application/json"
+				},
+				body: JSON.stringify(track)
+			})
+		}
+		addToDb(track)
+	})
+	domElement.append(button)
+} 
+
+const alternativeAdd = (domElement, track) => {
+	const button = document.createElement("button")
+	button.innerHTML = "<b>+</b> Alternative"
+	button.addEventListener("click", () => {
+		const addToDb = async () => {
+			await fetch("http://localhost:3000/alternative", {
+				method: "POST",
+				headers: {
+					"Content-Type":"application/json"
+				},
+				body: JSON.stringify(track)
+			})
+		}
+		addToDb(track)
+	})
+	domElement.append(button)
+} 
+
+const jazzAdd = (domElement, track) => {
+	const button = document.createElement("button")
+	button.innerHTML = "<b>+</b> Jazz"
+	button.addEventListener("click", () => {
+		const addToDb = async () => {
+			await fetch("http://localhost:3000/jazz", {
+				method: "POST",
+				headers: {
+					"Content-Type":"application/json"
+				},
+				body: JSON.stringify(track)
+			})
+		}
+		addToDb(track)
+	})
+	domElement.append(button)
+
+} 
+
+const rockAdd = (domElement, track) => {
+	const button = document.createElement("button")
+	button.innerHTML = "<b>+</b> Rock"
+	button.addEventListener("click", () => {
+		const addToDb = async () => {
+			await fetch("http://localhost:3000/rock", {
+				method: "POST",
+				headers: {
+					"Content-Type":"application/json"
+				},
+				body: JSON.stringify(track)
+			})
+		}
+		addToDb(track)
+	})
+	domElement.append(button)
+} 
 //render each element from runSearch to the DOM
 const searchRender = (data) => {
 	data.forEach((entry) => {
@@ -44,23 +122,20 @@ const searchRender = (data) => {
 		trackArtist.className = "track-artist"
 		let trackDuration = document.createElement("p")
 		trackDuration.innerText = `${entry.duration} seconds`
-		let button = document.createElement("button")
-		button.className = "add-button"
-		button.innerHTML = "<b>+</b>"
-		button.addEventListener("click",() => {
-			//populating playlistContents template when button clicked
-				let trackData = {
-					img: trackCardImg.src,
-					title: trackTitle.innerText,
-					album: trackAlbum.innerText,
-					artist: trackArtist.innerText,
-					duration: trackDuration.innerText
-				}
-				//****POST REQUEST FUNCTION*****
-				playLister(trackData)
-		})
-		//render everything to the trackCard & resultDiv
-		trackCard.append(trackCardImg, trackTitle, trackAlbum, trackArtist, trackDuration, button)
+		let trackData = {
+			img: trackCardImg.src,
+			title: trackTitle.innerText,
+			album: trackAlbum.innerText,
+			artist: trackArtist.innerText,
+			duration: trackDuration.innerText
+		}
+		//POST request buttons
+		rockAdd(trackCard, trackData)
+		jazzAdd(trackCard, trackData)
+		classicalAdd(trackCard, trackData)
+		alternativeAdd(trackCard, trackData)
+
+		trackCard.append(trackCardImg, trackTitle, trackAlbum, trackArtist, trackDuration)
 		resultDiv.append(trackCard)
 		iterator += 1
 
@@ -96,6 +171,8 @@ const runSearch = () => {
 		request()
 	})
 }
+
+
 //POST request to make playlists
 const createPlaylist = async (namedPlaylist) => {
 	await fetch("http://localhost:3000/playlists", {
@@ -107,16 +184,5 @@ const createPlaylist = async (namedPlaylist) => {
 	})
 }
 
-//POST request to populate playlists
-const playLister = async (trackInfo) => {
-	await fetch(`http://localhost:3000/playlists`, {
-		method: "POST",
-		headers: {
-			"Content-Type":"application/json"
-		},
-		body: JSON.stringify(trackInfo)
-	})
-}
-
-//function calls
+//global function calls
 runSearch()
