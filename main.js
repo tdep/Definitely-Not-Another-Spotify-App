@@ -14,20 +14,17 @@ const tracks = document.getElementById("tracks")
 
 //Create new playlist
 let playlistNameValue = document.getElementById("playlist-name-bar")
-let playlistName = document.createElement('h3')
+
 const createButton = document.getElementById("create-button")
 createButton.addEventListener("click", () => {
 	let playlistDiv = document.createElement('div')
 	playlistDiv.className = "created-playlist"
 	playlistDiv.id =`${playlistNameValue.value}`
-	playlistName.innerText=`${playlistNameValue.value}`
+	let playlistName = document.createElement('h3')
+	playlistName.innerText = `${playlistNameValue.value}`
 	playlistDiv.append(playlistName)
 	savedLists.append(playlistDiv)
-	let playlistNameDB = playlistNameValue.value
-	console.log(playlistNameDB)
-	//(playlistNameDB)
 })
-
 //render each element from runSearch to the DOM
 const searchRender = (data) => {
 	data.forEach((entry) => {
@@ -47,7 +44,6 @@ const searchRender = (data) => {
 		trackArtist.className = "track-artist"
 		let trackDuration = document.createElement("p")
 		trackDuration.innerText = `${entry.duration} seconds`
-		trackCard.setAttribute("style", "border: 1px solid black; margin:20px auto 10px auto;")
 		let button = document.createElement("button")
 		button.className = "add-button"
 		button.innerHTML = "<b>+</b>"
@@ -113,7 +109,7 @@ const createPlaylist = async (namedPlaylist) => {
 
 //POST request to populate playlists
 const playLister = async (trackInfo) => {
-	await fetch("http://localhost:3000/playlists", {
+	await fetch(`http://localhost:3000/playlists`, {
 		method: "POST",
 		headers: {
 			"Content-Type":"application/json"
@@ -121,6 +117,6 @@ const playLister = async (trackInfo) => {
 		body: JSON.stringify(trackInfo)
 	})
 }
-				
+
 //function calls
 runSearch()
