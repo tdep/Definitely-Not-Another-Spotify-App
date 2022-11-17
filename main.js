@@ -3,24 +3,76 @@
 const searchBar = document.getElementById("search-bar")
 const submitButton = document.getElementById("submit-button")
 const searchForm = document.getElementById("search-form")
+
 //result list variables
 const resultDiv = document.getElementById("search-result")
-//POST Request template
-const playlistContents = {
-	img:"",
-	title:"",
-	album:"",
-	artist:"",
-	duration:""
-}
+let iterator = 0
+
 //playlist-list variables
 const savedLists = document.getElementById("saved-lists")
 const tracks = document.getElementById("tracks")
 
+//Create new playlist
+let playlistNameValue = document.getElementById("playlist-name-bar")
+let playlistName = document.createElement('h3')
+const createButton = document.getElementById("create-button")
+createButton.addEventListener("click", () => {
+	let playlistDiv = document.createElement('div')
+	playlistDiv.className = "created-playlist"
+	playlistDiv.id =`${playlistNameValue.value}`
+	playlistName.innerText=`${playlistNameValue.value}`
+	playlistDiv.append(playlistName)
+	savedLists.append(playlistDiv)
+	let playlistNameDB = playlistNameValue.value
+	console.log(playlistNameDB)
+	//(playlistNameDB)
+})
 
-//Search function
+//render each element from runSearch to the DOM
+const searchRender = (data) => {
+	data.forEach((entry) => {
+		let trackCard = document.createElement("div")
+		trackCard.id = entry.id
+		trackCard.className = "track-card"
+		let trackCardImg = document.createElement("img")
+		trackCardImg.src = entry.album.cover_small
+		let trackTitle = document.createElement("h2")
+		trackTitle.innerText = entry.title
+		trackTitle.className = "track-title"
+		let trackAlbum = document.createElement("p")
+		trackAlbum.innerHTML = `<em>${entry.album.title}</em>`
+		trackAlbum.className = "track-album"
+		let trackArtist = document.createElement("p")
+		trackArtist.innerText = entry.artist.name
+		trackArtist.className = "track-artist"
+		let trackDuration = document.createElement("p")
+		trackDuration.innerText = `${entry.duration} seconds`
+		trackCard.setAttribute("style", "border: 1px solid black; margin:20px auto 10px auto;")
+		let button = document.createElement("button")
+		button.className = "add-button"
+		button.innerHTML = "<b>+</b>"
+		button.addEventListener("click",() => {
+			//populating playlistContents template when button clicked
+				let trackData = {
+					img: trackCardImg.src,
+					title: trackTitle.innerText,
+					album: trackAlbum.innerText,
+					artist: trackArtist.innerText,
+					duration: trackDuration.innerText
+				}
+				//****POST REQUEST FUNCTION*****
+				playLister(trackData)
+		})
+		//render everything to the trackCard & resultDiv
+		trackCard.append(trackCardImg, trackTitle, trackAlbum, trackArtist, trackDuration, button)
+		resultDiv.append(trackCard)
+		iterator += 1
+
+	})
+}
+
+//Search bar function
 const runSearch = () => {
-	let iterator = 0
 	searchForm.addEventListener("submit", (e) => {
 		e.preventDefault()
 		//clear page results
@@ -43,100 +95,32 @@ const runSearch = () => {
 				}
 			})
 			let res = await req.json()
-			let entryItem = res.data
-			
-			//render each element from res.data to the DOM
-			entryItem.forEach((entry) => {
-				let trackCard = document.createElement("div")
-				trackCard.id = entry.id
-				trackCard.className = "track-card"
-				let trackCardImg = document.createElement("img")
-				trackCardImg.src = entry.album.cover_small
-				let trackTitle = document.createElement("h2")
-				trackTitle.innerText = entry.title
-				trackTitle.className = "track-title"
-				let trackAlbum = document.createElement("p")
-				trackAlbum.innerHTML = `<em>${entry.album.title}</em>`
-				trackAlbum.className = "track-album"
-				let trackArtist = document.createElement("p")
-				trackArtist.innerText = entry.artist.name
-				trackArtist.className = "track-artist"
-				let trackDuration = document.createElement("p")
-				trackDuration.innerText = `${entry.duration} seconds`
-				trackCard.setAttribute("style", "border: 1px solid black; margin:20px auto 10px auto;")
-				let addButton = document.createElement("button")
-				addButton.className = "add-button"
-				addButton.innerHTML = "<b>+</b>"
-				
-				
-				//POST request
-				addButton.addEventListener("click",() => {
-					playlistContents.img = trackCardImg.src
-					playlistContents.title = trackTitle.innerText
-					playlistContents.album = trackAlbum.innerText
-					playlistContents.artist = trackArtist.innerText
-					playlistContents.duration = trackDuration.innerText
-					let dropdown = document.createElement("div")
-					dropdown.className = "dropdown"
-					const playLister = async () => {
-						const req = await fetch("http://localhost:3000/playlists", {
-							method: "POST",
-							headers: {
-								"Content-Type":"application/json"
-							},
-							body: JSON.stringify(playlistContents)
-						})
-					}
-					playLister()
-				})
-				
-				trackCard.append(trackCardImg, trackTitle, trackAlbum, trackArtist, trackDuration, addButton)
-				resultDiv.append(trackCard)
-				iterator += 1
-			})
-			// console.log(iterator)
+			searchRender(res.data)
 		}
 		request()
 	})
 }
-
-//playlist populator
-const playlistPopulator = async () => {
-	let req = await fetch("http://localhost:3000/playlists")
-	let res = await req.json()
-	res.forEach((element) => {
-		let li = document.createElement("li")
-		li.className = "playlist-item"
-		li.innerHTML = `<em>track:</em> ${element.title} <em>artist:</em> ${element.artist}`
-		savedLists.append(li)
-		
+//POST request to make playlists
+const createPlaylist = async (namedPlaylist) => {
+	await fetch("http://localhost:3000/playlists", {
+		method: "POST",
+		headers: {
+			"Content-Type":"application/json"
+		},
+		body: JSON.stringify(namedPlaylist)
 	})
 }
 
+//POST request to populate playlists
+const playLister = async (trackInfo) => {
+	await fetch("http://localhost:3000/playlists", {
+		method: "POST",
+		headers: {
+			"Content-Type":"application/json"
+		},
+		body: JSON.stringify(trackInfo)
+	})
+}
+				
 //function calls
 runSearch()
-playlistPopulator()
-
-
-// let listDiv = document.createElement("div")
-// listDiv.classname = "playlist-name"
-// listDiv.innerText = "My Awesome Playlist"
-// let listButton = document.createElement("button")
-// listButton.innerText = "My Awesome Playlist"
-// listButton.id = "list-button"
-// listButton.setAttribute("style", "border: 1px solid black; margin:20px auto 20px auto;")
-// savedLists.append(listButton)
-// listButton.addEventListener("click", () => {
-	//saved-lists dom populator
-	//  async () => {
-	// 	let req = await fetch("http://localhost:3000/playlists")
-	// 	let res = await req.json()
-	// 	res.forEach((element) => {
-	// 		let li = document.createElement("li")
-	// 		li.innerText = element.title
-	// 		console.log(li)
-	// 		tracks.append(li)
-	// 	})
-	// }
-
-// })

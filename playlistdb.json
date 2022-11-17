@@ -1,11 +1,6 @@
 {
   "playlists": [
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/56x56-000000-80-0-0.jpg",
-      "title": "One More Time",
-      "album": "Discovery",
-      "artist": "Daft Punk",
-      "duration": "320 seconds",
       "id": 1
     }
   ]
