@@ -1,100 +1,52 @@
 {
   "rock": [
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/de5b9b704cd4ec36f8bf49beb3e17ba2/56x56-000000-80-0-0.jpg",
-      "title": "The Less I Know The Better",
-      "album": "Currents",
-      "artist": "Tame Impala",
-      "duration": "216 seconds",
-      "id": 1
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/d8eb61bd4becf79a602a75b69eebde7d/56x56-000000-80-0-0.jpg",
-      "title": "Borderline",
-      "album": "The Slow Rush",
-      "artist": "Tame Impala",
-      "duration": "237 seconds",
-      "id": 2
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/9fe30ce99ef17cb1250bef071f15ccee/56x56-000000-80-0-0.jpg",
-      "title": "Elephant",
-      "album": "Lonerism",
-      "artist": "Tame Impala",
-      "duration": "211 seconds",
-      "id": 3
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/24ae920cb3bde9bd3fd95cd4676b3b86/56x56-000000-80-0-0.jpg",
-      "title": "Yesterday and Today (2003 Remaster)",
-      "album": "Yes (Deluxe Edition)",
-      "artist": "Yes",
-      "duration": "169 seconds",
-      "id": 4
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/1bdcb776e4d04064cba66bdd494a94ef/56x56-000000-80-0-0.jpg",
-      "title": "Changes",
-      "album": "90125 (Deluxe Version)",
-      "artist": "Yes",
-      "duration": "380 seconds",
-      "id": 5
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/cec4b6bdf612c8ef276ac41adb354543/56x56-000000-80-0-0.jpg",
-      "title": "And You and I (2003 Remaster)",
-      "album": "Close to the Edge (Deluxe Edition)",
-      "artist": "Yes",
-      "duration": "607 seconds",
-      "id": 6
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/8ae92d9ed9b5569f1fdf706470c1a7ed/56x56-000000-80-0-0.jpg",
-      "title": "I've Seen All Good People: a. Your Move, b. All Good People (2003 Remaster)",
-      "album": "The Yes Album (Deluxe Edition)",
-      "artist": "Yes",
-      "duration": "413 seconds",
-      "id": 7
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/08f9ec96fb31ae8ae30c936e7c5a0a3c/56x56-000000-80-0-0.jpg",
-      "title": "LED",
-      "album": "Corrupted",
-      "artist": "OmenXIII",
-      "duration": "134 seconds",
-      "id": 8
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/08f9ec96fb31ae8ae30c936e7c5a0a3c/56x56-000000-80-0-0.jpg",
-      "title": "LED",
-      "album": "Corrupted",
-      "artist": "OmenXIII",
-      "duration": "134 seconds",
-      "id": 9
-    },
-    {
       "img": "https://e-cdns-images.dzcdn.net/images/cover/460a0edd96f743be03b7405eac38c633/56x56-000000-80-0-0.jpg",
       "title": "Stairway to Heaven (Remaster)",
       "album": "Led Zeppelin IV (Deluxe Edition)",
       "artist": "Led Zeppelin",
       "duration": "482 seconds",
-      "id": 10
+      "id": 1
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/e2660cc00dbc155e85ab9f210fb7dcd5/56x56-000000-80-0-0.jpg",
-      "title": "Led",
-      "album": "Led",
-      "artist": "GOTOU寄生獣",
-      "duration": "134 seconds",
-      "id": 11
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/a5fdd04471cb7d6ec8a663621bdd9bee/56x56-000000-80-0-0.jpg",
+      "title": "Whole Lotta Love (Remaster)",
+      "album": "Led Zeppelin II (Deluxe Edition)",
+      "artist": "Led Zeppelin",
+      "duration": "334 seconds",
+      "id": 2
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 12
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/37788af586af4ab83c7cfdc6fe4ad3bc/56x56-000000-80-0-0.jpg",
+      "title": "Immigrant Song (Remaster)",
+      "album": "Led Zeppelin III (Deluxe Edition)",
+      "artist": "Led Zeppelin",
+      "duration": "146 seconds",
+      "id": 3
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/b856ee1b505a82b9c8a762eaa2f8f064/56x56-000000-80-0-0.jpg",
+      "title": "Kashmir (Remaster)",
+      "album": "Physical Graffiti (Deluxe Edition)",
+      "artist": "Led Zeppelin",
+      "duration": "517 seconds",
+      "id": 4
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/021ddfb48a222859aa12da805116ca8d/56x56-000000-80-0-0.jpg",
+      "title": "All Along the Watchtower",
+      "album": "Experience Hendrix: The Best Of Jimi Hendrix",
+      "artist": "Jimi Hendrix",
+      "duration": "238 seconds",
+      "id": 5
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/b83888148da4c3978b9c3870d8cb3166/56x56-000000-80-0-0.jpg",
+      "title": "Hey Joe",
+      "album": "Are You Experienced",
+      "artist": "Jimi Hendrix",
+      "duration": "210 seconds",
+      "id": 6
     }
   ],
   "alternative": [
@@ -107,148 +59,36 @@
       "id": 1
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/0d2ccaf5f7b35af57f3d9c8f4504a6e6/56x56-000000-80-0-0.jpg",
-      "title": "High and Dry",
-      "album": "The Bends",
-      "artist": "Radiohead",
-      "duration": "257 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/f537bd0b4706bd6da3260e74b4ee9cd8/56x56-000000-80-0-0.jpg",
+      "title": "Between the Bars",
+      "album": "Kill Rock Stars Sampler 2009",
+      "artist": "Elliott Smith",
+      "duration": "141 seconds",
       "id": 2
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/05a186e0a859a36f9cd51cdae2158fe1/56x56-000000-80-0-0.jpg",
-      "title": "Paranoid Android",
-      "album": "OK Computer",
-      "artist": "Radiohead",
-      "duration": "387 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/1321d23e26ac7a7d20fa02b258ad6566/56x56-000000-80-0-0.jpg",
+      "title": "Somebody That I Used To Know",
+      "album": "Figure 8",
+      "artist": "Elliott Smith",
+      "duration": "129 seconds",
       "id": 3
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/47c526f1a14dbeabb40352e400153bba/56x56-000000-80-0-0.jpg",
-      "title": "Big Girl (You Are Beautiful)",
-      "album": "Life in Cartoon Motion",
-      "artist": "MIKA",
-      "duration": "248 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/5d3703e81301662626cc06a8b2843c78/56x56-000000-80-0-0.jpg",
+      "title": "Fade Into You",
+      "album": "So Tonight That I Might See",
+      "artist": "Mazzy Star",
+      "duration": "295 seconds",
       "id": 4
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/cdcdcef0ce79052749a31f2288a04a69/56x56-000000-80-0-0.jpg",
-      "title": "Trololo",
-      "album": "Happy Sad Songs, Vol. 2",
-      "artist": "The Gregory Brothers",
-      "duration": "102 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/118edee1ac46ee295ac30d60387f673b/56x56-000000-80-0-0.jpg",
+      "title": "Look On Down From The Bridge",
+      "album": "Among My Swan",
+      "artist": "Mazzy Star",
+      "duration": "287 seconds",
       "id": 5
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/0de0f9b71d86094a166f3238109426ad/56x56-000000-80-0-0.jpg",
-      "title": "Das Orgelbüchlein, BWV 599-644 : J.S. Bach: Das Orgelbüchlein, BWV 599-644 - Christe, du Lamm Gottes, BWV 619 (Arr. Kurtág) (Upright Piano)",
-      "album": "From Afar",
-      "artist": "Víkingur Ólafsson",
-      "duration": "105 seconds",
-      "id": 6
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 7
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 8
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 9
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 10
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 11
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 12
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 13
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 14
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 15
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 16
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 17
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 18
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 19
     }
   ],
   "jazz": [
@@ -261,102 +101,70 @@
       "id": 1
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/cd5d9196f8254a6c28cda16b00a353f2/56x56-000000-80-0-0.jpg",
-      "title": "The Dry Cleaner From Des Moines",
-      "album": "Mingus",
-      "artist": "Joni Mitchell",
-      "duration": "201 seconds",
-      "id": 2
-    },
-    {
       "img": "https://e-cdns-images.dzcdn.net/images/cover/82adc1b128b7cc37198e48dc628fe436/56x56-000000-80-0-0.jpg",
       "title": "Goodbye Pork Pie Hat",
       "album": "Mingus Ah Um",
       "artist": "Charles Mingus",
       "duration": "287 seconds",
+      "id": 2
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/08a552af7a8c574a73fdaec9d9f8d4f6/56x56-000000-80-0-0.jpg",
+      "title": "Chameleon",
+      "album": "Head Hunters",
+      "artist": "Herbie Hancock",
+      "duration": "941 seconds",
       "id": 3
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/7f73749f6fab280d830f11edc50bdc29/56x56-000000-80-0-0.jpg",
-      "title": "Moanin'",
-      "album": "Blues & Roots",
-      "artist": "Charles Mingus",
-      "duration": "482 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/08a552af7a8c574a73fdaec9d9f8d4f6/56x56-000000-80-0-0.jpg",
+      "title": "Watermelon Man",
+      "album": "Head Hunters",
+      "artist": "Herbie Hancock",
+      "duration": "388 seconds",
       "id": 4
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/82adc1b128b7cc37198e48dc628fe436/56x56-000000-80-0-0.jpg",
-      "title": "Jelly Roll",
-      "album": "Mingus Ah Um",
-      "artist": "Charles Mingus",
-      "duration": "242 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/bbc96da10e597caa2cb32e98f9af037a/56x56-000000-80-0-0.jpg",
+      "title": "Pharaoh's Dance",
+      "album": "Bitches Brew",
+      "artist": "Miles Davis",
+      "duration": "1204 seconds",
       "id": 5
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/822dd8968617b2da70dcaa5804556512/56x56-000000-80-0-0.jpg",
-      "title": "So What",
-      "album": "Greatest Hits...So Far!!!",
-      "artist": "P!nk",
-      "duration": "214 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/26cfe2439104b00a9df31d86fb921ad7/56x56-000000-80-0-0.jpg",
+      "title": "Also Sprach Zarathustra",
+      "album": "Prelude (CTI Records 40th Anniversary Edition)",
+      "artist": "Deodato",
+      "duration": "541 seconds",
       "id": 6
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/65aa844bb82a67272629b58dbc38a8b9/56x56-000000-80-0-0.jpg",
-      "title": "Kiss Me Thru The Phone",
-      "album": "iSouljaBoyTellem",
-      "artist": "Soulja Boy Tell'em",
-      "duration": "193 seconds",
-      "id": 7
     }
   ],
   "classical": [
     {
       "img": "https://e-cdns-images.dzcdn.net/images/cover/45a861a3632dd06578cf43621883618c/56x56-000000-80-0-0.jpg",
-      "title": "Symphony No. 7 in D, K.45 : Mozart: Symphony No. 7 in D, K.45 - 4. (Allegro)",
-      "album": "Cosy Classics: Mozart",
-      "artist": "Royal Philharmonic Orchestra",
-      "duration": "89 seconds",
+      "title": "Concerto in F Minor \"L'inverno\", Op. 8, No. 4, RV 297 : Vivaldi: Concerto in F Minor \"L'inverno\", Op. 8, No. 4, RV 297 - II. Largo",
+      "album": "Cosy Classics - Vivaldi",
+      "artist": "Daniel Hope",
+      "duration": "88 seconds",
       "id": 1
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/45a861a3632dd06578cf43621883618c/56x56-000000-80-0-0.jpg",
-      "title": "Symphony No. 7 in D, K.45 : Mozart: Symphony No. 7 in D, K.45 - 2. Andante",
-      "album": "Cosy Classics: Mozart",
-      "artist": "Royal Philharmonic Orchestra",
-      "duration": "86 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/a4b550a2a86e5c000ced3a9b75a8ef61/56x56-000000-80-0-0.jpg",
+      "title": "Romeo and Juliet, Op. 64 / Act 1 : Prokofiev: Romeo and Juliet, Op. 64 / Act 1 - Dance Of The Knights",
+      "album": "Prokofiev: Romeo & Juliet",
+      "artist": "The Cleveland Orchestra",
+      "duration": "307 seconds",
       "id": 2
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/95909e24bb21a434282a483766ef64b5/56x56-000000-80-0-0.jpg",
-      "title": "L'Assasymphonie",
-      "album": "Mozart l'Opera Rock (standard)",
-      "artist": "Mozart Opera Rock",
-      "duration": "230 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/b805bcf0e4eee854b7e80a85f695847b/56x56-000000-80-0-0.jpg",
+      "title": "Tchaikovsky : 1812 Overture Op.49",
+      "album": "Tchaikovsky : Symphony No.5 & 1812 Overture",
+      "artist": "Daniel Barenboim",
+      "duration": "905 seconds",
       "id": 3
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/45a861a3632dd06578cf43621883618c/56x56-000000-80-0-0.jpg",
-      "title": "Symphony No. 5 in B flat, K.22 : Mozart: Symphony No. 5 in B flat, K.22 - 3. Allegro molto",
-      "album": "Cosy Classics: Mozart",
-      "artist": "Royal Philharmonic Orchestra",
-      "duration": "78 seconds",
-      "id": 4
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/9269686cc4dc25e86fae927509e2a177/56x56-000000-80-0-0.jpg",
-      "title": "Vivaldi: The Four Seasons, Violin Concerto in F Minor, Op. 8 No. 4, RV 297 \"Winter\": II. Largo",
-      "album": "Vivaldi: The Four Seasons",
-      "artist": "Renaud Capuçon",
-      "duration": "111 seconds",
-      "id": 5
-    },
-    {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/efafb652de88dd19bae1206e67052683/56x56-000000-80-0-0.jpg",
-      "title": "Girl You Stank",
-      "album": "Epic Gamer World",
-      "artist": "Bad News",
-      "duration": "168 seconds",
-      "id": 6
     }
   ]
 }
