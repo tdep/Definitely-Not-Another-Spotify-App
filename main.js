@@ -12,9 +12,77 @@ let iterator = 0
 const savedLists = document.getElementById("saved-lists")
 const tracks = document.getElementById("tracks")
 const alternativeButton = document.getElementById("alternative")
+alternativeButton.addEventListener("click", () => {
+	//clear page results
+	if (iterator !== 0) {
+		while (resultDiv.firstChild) {
+			resultDiv.removeChild(resultDiv.firstChild)
+			if (iterator > 0) {
+				iterator -= 1
+			}
+		}
+	}
+	let dbRequest = async () => {
+		let req = await fetch("http://localhost:3000/alternative")
+		let res = await req.json()
+		playlistRender(res)
+	}
+	dbRequest()
+})
 const rockButton = document.getElementById("rock")
+rockButton.addEventListener("click", () => {
+	//clear page results
+	if (iterator !== 0) {
+		while (resultDiv.firstChild) {
+			resultDiv.removeChild(resultDiv.firstChild)
+			if (iterator > 0) {
+				iterator -= 1
+			}
+		}
+	}
+	let dbRequest = async () => {
+		let req = await fetch("http://localhost:3000/rock")
+		let res = await req.json()
+		playlistRender(res)
+	}
+	dbRequest()
+})
 const jazzButton = document.getElementById("jazz")
+jazzButton.addEventListener("click", () => {
+	//clear page results
+	if (iterator !== 0) {
+		while (resultDiv.firstChild) {
+			resultDiv.removeChild(resultDiv.firstChild)
+			if (iterator > 0) {
+				iterator -= 1
+			}
+		}
+	}
+	let dbRequest = async () => {
+		let req = await fetch("http://localhost:3000/jazz")
+		let res = await req.json()
+		playlistRender(res)
+	}
+	dbRequest()
+})
 const classicalButton = document.getElementById("classical")
+classicalButton.addEventListener("click", () => {
+	//clear page results
+	if (iterator !== 0) {
+		while (resultDiv.firstChild) {
+			resultDiv.removeChild(resultDiv.firstChild)
+			if (iterator > 0) {
+				iterator -= 1
+			}
+		}
+	}
+	let dbRequest = async () => {
+		let req = await fetch("http://localhost:3000/classical")
+		let res = await req.json()
+		playlistRender(res)
+	}
+	dbRequest()
+})
 
 //Create new playlist
 let playlistNameValue = document.getElementById("playlist-name-bar")
@@ -141,7 +209,30 @@ const searchRender = (data) => {
 
 	})
 }
-
+//render each element from the playlist buttons
+const playlistRender = (data) => {
+	data.forEach((entry) => {
+		let trackCard = document.createElement("div")
+		trackCard.id = entry.id
+		trackCard.className = "track-card"
+		let trackCardImg = document.createElement("img")
+		trackCardImg.src = entry.img
+		let trackTitle = document.createElement("h2")
+		trackTitle.innerText = entry.title
+		trackTitle.className = "track-title"
+		let trackAlbum = document.createElement("p")
+		trackAlbum.innerHTML = `<em>${entry.album}</em>`
+		trackAlbum.className = "track-album"
+		let trackArtist = document.createElement("p")
+		trackArtist.innerText = entry.artist
+		trackArtist.className = "track-artist"
+		let trackDuration = document.createElement("p")
+		trackDuration.innerText = `${entry.duration} seconds`
+		trackCard.append(trackCardImg, trackTitle, trackAlbum, trackArtist, trackDuration)
+		resultDiv.append(trackCard)
+		iterator += 1
+	})
+}
 //Search bar function
 const runSearch = () => {
 	searchForm.addEventListener("submit", (e) => {
