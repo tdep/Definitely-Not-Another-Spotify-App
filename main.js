@@ -10,171 +10,77 @@ let iterator = 0
 
 //playlist-list variables
 const savedLists = document.getElementById("saved-lists")
+const customPlaylists = document.getElementById("custom-playlists")
 const tracks = document.getElementById("tracks")
+let playlistNameValue = document.getElementById("playlist-name-bar")
+
+//clears the page for every search / playlist render
+const pageClearer = () => {
+	if (iterator !== 0) {
+		while (resultDiv.firstChild) {
+			resultDiv.removeChild(resultDiv.firstChild)
+			if (iterator > 0) {
+				iterator -= 1
+			}
+		}
+	}
+}
+
+//GET request to render playlists
+const playlistGet = async (playlistName) => {
+	let req = await fetch(`http://localhost:3000/${playlistName}`)
+	let res = await req.json()
+	playlistRender(res)
+}
+
+//Playlist button assignments
 const alternativeButton = document.getElementById("alternative")
 alternativeButton.addEventListener("click", () => {
-	//clear page results
-	if (iterator !== 0) {
-		while (resultDiv.firstChild) {
-			resultDiv.removeChild(resultDiv.firstChild)
-			if (iterator > 0) {
-				iterator -= 1
-			}
-		}
-	}
-	let dbRequest = async () => {
-		let req = await fetch("http://localhost:3000/alternative")
-		let res = await req.json()
-		playlistRender(res)
-	}
-	dbRequest()
+	pageClearer()
+	playlistGet("alternative")
 })
+
 const rockButton = document.getElementById("rock")
 rockButton.addEventListener("click", () => {
-	//clear page results
-	if (iterator !== 0) {
-		while (resultDiv.firstChild) {
-			resultDiv.removeChild(resultDiv.firstChild)
-			if (iterator > 0) {
-				iterator -= 1
-			}
-		}
-	}
-	let dbRequest = async () => {
-		let req = await fetch("http://localhost:3000/rock")
-		let res = await req.json()
-		playlistRender(res)
-	}
-	dbRequest()
+	pageClearer()
+	playlistGet("rock")
 })
+
 const jazzButton = document.getElementById("jazz")
 jazzButton.addEventListener("click", () => {
-	//clear page results
-	if (iterator !== 0) {
-		while (resultDiv.firstChild) {
-			resultDiv.removeChild(resultDiv.firstChild)
-			if (iterator > 0) {
-				iterator -= 1
-			}
-		}
-	}
-	let dbRequest = async () => {
-		let req = await fetch("http://localhost:3000/jazz")
-		let res = await req.json()
-		playlistRender(res)
-	}
-	dbRequest()
+	pageClearer()
+	playlistGet("jazz")
 })
 const classicalButton = document.getElementById("classical")
 classicalButton.addEventListener("click", () => {
-	//clear page results
-	if (iterator !== 0) {
-		while (resultDiv.firstChild) {
-			resultDiv.removeChild(resultDiv.firstChild)
-			if (iterator > 0) {
-				iterator -= 1
-			}
-		}
-	}
-	let dbRequest = async () => {
-		let req = await fetch("http://localhost:3000/classical")
-		let res = await req.json()
-		playlistRender(res)
-	}
-	dbRequest()
+	pageClearer()
+	playlistGet("classical")
 })
 
-//Create new playlist
-let playlistNameValue = document.getElementById("playlist-name-bar")
+//POST request to populate playlists
+//takes name of the playlist and the data as an object to POST
+const playlistPost = async (playlistName, track) => {
+	await fetch(`http://localhost:3000/${playlistName}`, {
+		method: "POST",
+		headers: {
+			"Content-Type":"application/json"
+		},
+		body: JSON.stringify(track)
+	})
+}
 
-const createButton = document.getElementById("create-button")
-createButton.addEventListener("click", () => {
-	let playlistDiv = document.createElement('div')
-	playlistDiv.className = "created-playlist"
-	playlistDiv.id =`${playlistNameValue.value}`
-	let playlistName = document.createElement('h3')
-	playlistName.innerText = `${playlistNameValue.value}`
-	playlistDiv.append(playlistName)
-	savedLists.append(playlistDiv)
-})
-
-//Playlist populating POST requests
-const classicalAdd = (domElement, track) => {
+//takes the dom element to append the track entry to, the name of the playlist, 
+//and the data to add to the database
+const playlistAdd = (domElement, playlistName, track) => {
 	const button = document.createElement("button")
 	button.className = "add-button"
-	button.innerHTML = "<b>+</b> Classical"
+	button.innerHTML = `<b>+</b> ${playlistName}`
 	button.addEventListener("click", () => {
-		const addToDb = async () => {
-			await fetch("http://localhost:3000/classical", {
-				method: "POST",
-				headers: {
-					"Content-Type":"application/json"
-				},
-				body: JSON.stringify(track)
-			})
-		}
-		addToDb(track)
+		playlistPost(playlistName, track)
 	})
 	domElement.append(button)
-} 
+}
 
-const alternativeAdd = (domElement, track) => {
-	const button = document.createElement("button")
-	button.className = "add-button"
-	button.innerHTML = "<b>+</b> Alternative"
-	button.addEventListener("click", () => {
-		const addToDb = async () => {
-			await fetch("http://localhost:3000/alternative", {
-				method: "POST",
-				headers: {
-					"Content-Type":"application/json"
-				},
-				body: JSON.stringify(track)
-			})
-		}
-		addToDb(track)
-	})
-	domElement.append(button)
-} 
-
-const jazzAdd = (domElement, track) => {
-	const button = document.createElement("button")
-	button.className = "add-button"
-	button.innerHTML = "<b>+</b> Jazz"
-	button.addEventListener("click", () => {
-		const addToDb = async () => {
-			await fetch("http://localhost:3000/jazz", {
-				method: "POST",
-				headers: {
-					"Content-Type":"application/json"
-				},
-				body: JSON.stringify(track)
-			})
-		}
-		addToDb(track)
-	})
-	domElement.append(button)
-
-} 
-
-const rockAdd = (domElement, track) => {
-	const button = document.createElement("button")
-	button.className = "add-button"
-	button.innerHTML = "<b>+</b> Rock"
-	button.addEventListener("click", () => {
-		const addToDb = async () => {
-			await fetch("http://localhost:3000/rock", {
-				method: "POST",
-				headers: {
-					"Content-Type":"application/json"
-				},
-				body: JSON.stringify(track)
-			})
-		}
-		addToDb(track)
-	})
-	domElement.append(button)
-} 
 //render each element from runSearch to the DOM
 const searchRender = (data) => {
 	data.forEach((entry) => {
@@ -206,17 +112,17 @@ const searchRender = (data) => {
 			duration: trackDuration.innerText
 		}
 		//POST request buttons
-		rockAdd(trackCard, trackData)
-		jazzAdd(trackCard, trackData)
-		classicalAdd(trackCard, trackData)
-		alternativeAdd(trackCard, trackData)
-
+		playlistAdd(trackCard, "Classical", trackData)
+		playlistAdd(trackCard, "Rock", trackData)
+		playlistAdd(trackCard, "Jazz", trackData)
+		playlistAdd(trackCard, "Alternative", trackData)
+		
 		imgTitleDiv.append(trackCardImg, trackTitle)
 		albumArtist.append(trackAlbum, trackArtist, trackDuration)
 		trackCard.append(imgTitleDiv, albumArtist)
 		resultDiv.append(trackCard)
 		iterator += 1
-
+		
 	})
 }
 //render each element from the playlist buttons
@@ -247,6 +153,16 @@ const playlistRender = (data) => {
 		trackCard.append(imgTitleDiv, albumArtist)
 		resultDiv.append(trackCard)
 		iterator += 1
+	})
+}
+//Create new playlist
+const createPlaylistButton = () => {
+	const createButton = document.getElementById("create-button")
+	createButton.addEventListener("click", () => {
+		let button = document.createElement("button")
+		button.className = "playlist-button"
+		button.innerText = `${playlistNameValue.value}`
+		customPlaylists.append(button)
 	})
 }
 //Search bar function
@@ -281,15 +197,16 @@ const runSearch = () => {
 
 
 //POST request to make playlists
-const createPlaylist = async (namedPlaylist) => {
-	await fetch("http://localhost:3000/playlists", {
-		method: "POST",
-		headers: {
-			"Content-Type":"application/json"
-		},
-		body: JSON.stringify(namedPlaylist)
-	})
-}
+// const createPlaylist = async (namedPlaylist) => {
+// 	await fetch("http://localhost:3000/playlists", {
+// 		method: "POST",
+// 		headers: {
+// 			"Content-Type":"application/json"
+// 		},
+// 		body: JSON.stringify(namedPlaylist)
+// 	})
+// }
 
 //global function calls
+createPlaylistButton()
 runSearch()
