@@ -47,6 +47,38 @@
       "artist": "Jimi Hendrix",
       "duration": "210 seconds",
       "id": 6
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/2dcda2efa164dadcd0bb6c527364b520/56x56-000000-80-0-0.jpg",
+      "title": "If",
+      "album": "Atom Heart Mother",
+      "artist": "Pink Floyd",
+      "duration": "270 seconds",
+      "id": 7
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/021ddfb48a222859aa12da805116ca8d/56x56-000000-80-0-0.jpg",
+      "title": "All Along the Watchtower",
+      "album": "Experience Hendrix: The Best Of Jimi Hendrix",
+      "artist": "Jimi Hendrix",
+      "duration": "238 seconds",
+      "id": 8
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/01577136e555d7def7887ff4663358d4/56x56-000000-80-0-0.jpg",
+      "title": "Funk #49",
+      "album": "20th Century Masters: The Millennium Collection: Best Of Joe Walsh",
+      "artist": "James Gang",
+      "duration": "237 seconds",
+      "id": 9
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/01577136e555d7def7887ff4663358d4/56x56-000000-80-0-0.jpg",
+      "title": "Funk #49",
+      "album": "20th Century Masters: The Millennium Collection: Best Of Joe Walsh",
+      "artist": "James Gang",
+      "duration": "237 seconds",
+      "id": 10
     }
   ],
   "alternative": [
@@ -89,6 +121,14 @@
       "artist": "Mazzy Star",
       "duration": "287 seconds",
       "id": 5
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/b69d3bcbd130ad4cc9259de543889e30/56x56-000000-80-0-0.jpg",
+      "title": "Nonstop",
+      "album": "Scorpion",
+      "artist": "Drake",
+      "duration": "238 seconds",
+      "id": 6
     }
   ],
   "jazz": [
@@ -165,6 +205,30 @@
       "artist": "Daniel Barenboim",
       "duration": "905 seconds",
       "id": 3
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/0de0f9b71d86094a166f3238109426ad/56x56-000000-80-0-0.jpg",
+      "title": "Das Orgelbüchlein, BWV 599-644 : J.S. Bach: Das Orgelbüchlein, BWV 599-644 - Christe, du Lamm Gottes, BWV 619 (Arr. Kurtág) (Upright Piano)",
+      "album": "From Afar",
+      "artist": "Víkingur Ólafsson",
+      "duration": "105 seconds",
+      "id": 4
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/520e95ad63b24402b8f351fe0878de6b/56x56-000000-80-0-0.jpg",
+      "title": "The Firebird (L'oiseau De Feu) - Suite (1919) : Stravinsky: The Firebird (L'oiseau De Feu) - Suite (1919) - Finale",
+      "album": "My Figure Skating Album",
+      "artist": "Orchestre de l'Opéra Bastille",
+      "duration": "194 seconds",
+      "id": 5
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/84067b899e4d70cd3c1a00dfe494f09f/56x56-000000-80-0-0.jpg",
+      "title": "Des Prez: La déploration de Johannes Ockeghem: Nymphes des bois à 5",
+      "album": "Renaissance Vol.2",
+      "artist": "Robert Harre-Jones",
+      "duration": "273 seconds",
+      "id": 6
     }
   ]
 }
