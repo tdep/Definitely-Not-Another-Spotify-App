@@ -1,60 +1,130 @@
 {
-  "playlists": [
+  "rock": [
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/1e6f6130ca0ccbdd0cde4dc2b05e6df9/56x56-000000-80-0-0.jpg",
-      "title": "Song 2",
-      "album": "Blur: The Best Of",
-      "artist": "Blur",
-      "duration": "121 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/de5b9b704cd4ec36f8bf49beb3e17ba2/56x56-000000-80-0-0.jpg",
+      "title": "The Less I Know The Better",
+      "album": "Currents",
+      "artist": "Tame Impala",
+      "duration": "216 seconds",
       "id": 1
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/1e6f6130ca0ccbdd0cde4dc2b05e6df9/56x56-000000-80-0-0.jpg",
-      "title": "Song 2",
-      "album": "Blur: The Best Of",
-      "artist": "Blur",
-      "duration": "121 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/d8eb61bd4becf79a602a75b69eebde7d/56x56-000000-80-0-0.jpg",
+      "title": "Borderline",
+      "album": "The Slow Rush",
+      "artist": "Tame Impala",
+      "duration": "237 seconds",
       "id": 2
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/63339855a8ce45b9676fbbe3d2268897/56x56-000000-80-0-0.jpg",
-      "title": "Play",
-      "album": "Play",
-      "artist": "K-391",
-      "duration": "167 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/9fe30ce99ef17cb1250bef071f15ccee/56x56-000000-80-0-0.jpg",
+      "title": "Elephant",
+      "album": "Lonerism",
+      "artist": "Tame Impala",
+      "duration": "211 seconds",
+      "id": 3
+    }
+  ],
+  "alternative": [
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/f08424290260e58c6d76275253b316fd/56x56-000000-80-0-0.jpg",
+      "title": "Creep",
+      "album": "Pablo Honey",
+      "artist": "Radiohead",
+      "duration": "238 seconds",
+      "id": 1
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/0d2ccaf5f7b35af57f3d9c8f4504a6e6/56x56-000000-80-0-0.jpg",
+      "title": "High and Dry",
+      "album": "The Bends",
+      "artist": "Radiohead",
+      "duration": "257 seconds",
+      "id": 2
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/05a186e0a859a36f9cd51cdae2158fe1/56x56-000000-80-0-0.jpg",
+      "title": "Paranoid Android",
+      "album": "OK Computer",
+      "artist": "Radiohead",
+      "duration": "387 seconds",
+      "id": 3
+    }
+  ],
+  "jazz": [
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/82adc1b128b7cc37198e48dc628fe436/56x56-000000-80-0-0.jpg",
+      "title": "Boogie Stop Shuffle",
+      "album": "Mingus Ah Um",
+      "artist": "Charles Mingus",
+      "duration": "222 seconds",
+      "id": 1
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/cd5d9196f8254a6c28cda16b00a353f2/56x56-000000-80-0-0.jpg",
+      "title": "The Dry Cleaner From Des Moines",
+      "album": "Mingus",
+      "artist": "Joni Mitchell",
+      "duration": "201 seconds",
+      "id": 2
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/82adc1b128b7cc37198e48dc628fe436/56x56-000000-80-0-0.jpg",
+      "title": "Goodbye Pork Pie Hat",
+      "album": "Mingus Ah Um",
+      "artist": "Charles Mingus",
+      "duration": "287 seconds",
       "id": 3
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/83ab273d6ab00e129398b14ca07baee6/56x56-000000-80-0-0.jpg",
-      "title": "TRUCK",
-      "album": "A ROCK",
-      "artist": "HARDY",
-      "duration": "218 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/7f73749f6fab280d830f11edc50bdc29/56x56-000000-80-0-0.jpg",
+      "title": "Moanin'",
+      "album": "Blues & Roots",
+      "artist": "Charles Mingus",
+      "duration": "482 seconds",
       "id": 4
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/d896e3c349479e4d9acf0b62975d6240/56x56-000000-80-0-0.jpg",
-      "title": "Name",
-      "album": "A Boy Named Goo",
-      "artist": "The Goo Goo Dolls",
-      "duration": "270 seconds",
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/82adc1b128b7cc37198e48dc628fe436/56x56-000000-80-0-0.jpg",
+      "title": "Jelly Roll",
+      "album": "Mingus Ah Um",
+      "artist": "Charles Mingus",
+      "duration": "242 seconds",
       "id": 5
+    }
+  ],
+  "classical": [
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/45a861a3632dd06578cf43621883618c/56x56-000000-80-0-0.jpg",
+      "title": "Symphony No. 7 in D, K.45 : Mozart: Symphony No. 7 in D, K.45 - 4. (Allegro)",
+      "album": "Cosy Classics: Mozart",
+      "artist": "Royal Philharmonic Orchestra",
+      "duration": "89 seconds",
+      "id": 1
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/51dfcb30fbab88f79d299e991081a75b/56x56-000000-80-0-0.jpg",
-      "title": "D O D O",
-      "album": "Fleur froide - Second état : la cristallisation",
-      "artist": "Tayc",
-      "duration": "179 seconds",
-      "id": 6
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/45a861a3632dd06578cf43621883618c/56x56-000000-80-0-0.jpg",
+      "title": "Symphony No. 7 in D, K.45 : Mozart: Symphony No. 7 in D, K.45 - 2. Andante",
+      "album": "Cosy Classics: Mozart",
+      "artist": "Royal Philharmonic Orchestra",
+      "duration": "86 seconds",
+      "id": 2
     },
     {
-      "img": "https://e-cdns-images.dzcdn.net/images/cover/1e713a737c783e551ccb921afdc61a3e/56x56-000000-80-0-0.jpg",
-      "title": "go",
-      "album": "go",
-      "artist": "Cat Burns",
-      "duration": "215 seconds",
-      "id": 7
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/95909e24bb21a434282a483766ef64b5/56x56-000000-80-0-0.jpg",
+      "title": "L'Assasymphonie",
+      "album": "Mozart l'Opera Rock (standard)",
+      "artist": "Mozart Opera Rock",
+      "duration": "230 seconds",
+      "id": 3
+    },
+    {
+      "img": "https://e-cdns-images.dzcdn.net/images/cover/45a861a3632dd06578cf43621883618c/56x56-000000-80-0-0.jpg",
+      "title": "Symphony No. 5 in B flat, K.22 : Mozart: Symphony No. 5 in B flat, K.22 - 3. Allegro molto",
+      "album": "Cosy Classics: Mozart",
+      "artist": "Royal Philharmonic Orchestra",
+      "duration": "78 seconds",
+      "id": 4
     }
   ]
 }
