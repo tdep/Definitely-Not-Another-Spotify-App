@@ -101,6 +101,7 @@ createButton.addEventListener("click", () => {
 //Playlist populating POST requests
 const classicalAdd = (domElement, track) => {
 	const button = document.createElement("button")
+	button.className = "add-button"
 	button.innerHTML = "<b>+</b> Classical"
 	button.addEventListener("click", () => {
 		const addToDb = async () => {
@@ -119,6 +120,7 @@ const classicalAdd = (domElement, track) => {
 
 const alternativeAdd = (domElement, track) => {
 	const button = document.createElement("button")
+	button.className = "add-button"
 	button.innerHTML = "<b>+</b> Alternative"
 	button.addEventListener("click", () => {
 		const addToDb = async () => {
@@ -137,6 +139,7 @@ const alternativeAdd = (domElement, track) => {
 
 const jazzAdd = (domElement, track) => {
 	const button = document.createElement("button")
+	button.className = "add-button"
 	button.innerHTML = "<b>+</b> Jazz"
 	button.addEventListener("click", () => {
 		const addToDb = async () => {
@@ -156,6 +159,7 @@ const jazzAdd = (domElement, track) => {
 
 const rockAdd = (domElement, track) => {
 	const button = document.createElement("button")
+	button.className = "add-button"
 	button.innerHTML = "<b>+</b> Rock"
 	button.addEventListener("click", () => {
 		const addToDb = async () => {
@@ -177,19 +181,23 @@ const searchRender = (data) => {
 		let trackCard = document.createElement("div")
 		trackCard.id = entry.id
 		trackCard.className = "track-card"
+		let imgTitleDiv = document.createElement("div")
+		imgTitleDiv.id = "track-card-top"
 		let trackCardImg = document.createElement("img")
 		trackCardImg.src = entry.album.cover_small
-		let trackTitle = document.createElement("h2")
+		let trackTitle = document.createElement("h3")
 		trackTitle.innerText = entry.title
 		trackTitle.className = "track-title"
+		let trackDuration = document.createElement("p")
+		trackDuration.innerText = `${entry.duration} seconds`
+		let albumArtist = document.createElement("div")
+		albumArtist.id = "track-card-bottom"
 		let trackAlbum = document.createElement("p")
 		trackAlbum.innerHTML = `<em>${entry.album.title}</em>`
 		trackAlbum.className = "track-album"
 		let trackArtist = document.createElement("p")
 		trackArtist.innerText = entry.artist.name
 		trackArtist.className = "track-artist"
-		let trackDuration = document.createElement("p")
-		trackDuration.innerText = `${entry.duration} seconds`
 		let trackData = {
 			img: trackCardImg.src,
 			title: trackTitle.innerText,
@@ -203,7 +211,9 @@ const searchRender = (data) => {
 		classicalAdd(trackCard, trackData)
 		alternativeAdd(trackCard, trackData)
 
-		trackCard.append(trackCardImg, trackTitle, trackAlbum, trackArtist, trackDuration)
+		imgTitleDiv.append(trackCardImg, trackTitle)
+		albumArtist.append(trackAlbum, trackArtist, trackDuration)
+		trackCard.append(imgTitleDiv, albumArtist)
 		resultDiv.append(trackCard)
 		iterator += 1
 
@@ -215,20 +225,26 @@ const playlistRender = (data) => {
 		let trackCard = document.createElement("div")
 		trackCard.id = entry.id
 		trackCard.className = "track-card"
+		let imgTitleDiv = document.createElement("div")
+		imgTitleDiv.id = "track-card-top"
 		let trackCardImg = document.createElement("img")
 		trackCardImg.src = entry.img
-		let trackTitle = document.createElement("h2")
+		let trackTitle = document.createElement("h3")
 		trackTitle.innerText = entry.title
 		trackTitle.className = "track-title"
+		let trackDuration = document.createElement("p")
+		trackDuration.innerText = `${entry.duration}`
+		let albumArtist = document.createElement("div")
+		albumArtist.id = "track-card-bottom"
 		let trackAlbum = document.createElement("p")
 		trackAlbum.innerHTML = `<em>${entry.album}</em>`
 		trackAlbum.className = "track-album"
 		let trackArtist = document.createElement("p")
 		trackArtist.innerText = entry.artist
 		trackArtist.className = "track-artist"
-		let trackDuration = document.createElement("p")
-		trackDuration.innerText = `${entry.duration} seconds`
-		trackCard.append(trackCardImg, trackTitle, trackAlbum, trackArtist, trackDuration)
+		imgTitleDiv.append(trackCardImg, trackTitle)
+		albumArtist.append(trackAlbum, trackArtist, trackDuration)
+		trackCard.append(imgTitleDiv, albumArtist)
 		resultDiv.append(trackCard)
 		iterator += 1
 	})
