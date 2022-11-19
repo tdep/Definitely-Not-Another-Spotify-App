@@ -195,18 +195,6 @@ const runSearch = () => {
 	})
 }
 
-
-//POST request to make playlists
-// const createPlaylist = async (namedPlaylist) => {
-// 	await fetch("http://localhost:3000/playlists", {
-// 		method: "POST",
-// 		headers: {
-// 			"Content-Type":"application/json"
-// 		},
-// 		body: JSON.stringify(namedPlaylist)
-// 	})
-// }
-
 //global function calls
 createPlaylistButton()
 runSearch()
